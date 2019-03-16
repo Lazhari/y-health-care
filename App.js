@@ -2,24 +2,24 @@ import React from 'react';
 import { StyleSheet, View, Text, TouchableHighlight } from 'react-native';
 import Swiper from 'react-native-swiper';
 
-import Screen from './screens/Screen';
+import Board from './screens/Board';
 
-const screensData = [
+const boards = [
 	{
 		imageSource: require('./assets/images/screen-one.png'),
-		screenTitle: 'Improve body balance',
+		boardTitle: 'Improve body balance',
 		description:
 			'Exercise can improve your stability and also what is called your “kinesthetic awareness”.'
 	},
 	{
 		imageSource: require('./assets/images/screen-two.png'),
-		screenTitle: 'Stop wishing and get fit',
+		boardTitle: 'Stop wishing and get fit',
 		description:
 			'Regardless of your body appearance, regular fitness helps improve your self-esteem.'
 	},
 	{
 		imageSource: require('./assets/images/screen-three.png'),
-		screenTitle: 'Relieve stress with yoga',
+		boardTitle: 'Relieve stress with yoga',
 		description:
 			'Yoga reduces stress and anxiety, which in turn reduces the physical effects of stress on the body. '
 	}
@@ -27,12 +27,12 @@ const screensData = [
 
 export default class App extends React.Component {
 	render() {
-		const screensList = screensData.map((screenProps, index) => (
-			<Screen {...screenProps} key={index} />
+		const boardList = boards.map((board, index) => (
+			<Board {...board} key={index} />
 		));
 		return (
 			<View style={styles.container}>
-				<View style={styles.screensContainer}>
+				<View style={styles.boardsContainer}>
 					<Swiper
 						style={styles.wrapper}
 						showsButtons={false}
@@ -41,7 +41,7 @@ export default class App extends React.Component {
 						autoplay
 						autoplayTimeout={8}
 					>
-						{screensList}
+						{boardList}
 					</Swiper>
 				</View>
 				<TouchableHighlight
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'center'
 	},
-	screensContainer: {
+	boardsContainer: {
 		flex: 1
 	},
 	footer: {

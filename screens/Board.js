@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
-export default class Screen extends Component {
+export default class Board extends Component {
 	render() {
-		const { imageSource, screenTitle, description } = this.props;
+		const { imageSource, boardTitle, description } = this.props;
 		return (
 			<View style={styles.container}>
 				<View style={styles.imageContainer}>
 					<Image source={imageSource} />
 				</View>
 				<View style={styles.content}>
-					<Text style={styles.title}>{screenTitle} </Text>
+					<Text style={styles.title}>{boardTitle} </Text>
 					<Text style={styles.contentText}>{description}</Text>
 				</View>
 			</View>

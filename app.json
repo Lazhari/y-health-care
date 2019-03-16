@@ -24,6 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "On boarding for Healthcare app app Using React Native with expo",
+    "githubUrl": "https://github.com/Lazhari/y-health-care"
   }
 }
