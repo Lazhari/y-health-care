@@ -2,8 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 59598,
-  "expoServerNgrokUrl": "https://vr-4na.mlazhari.y-health-care.exp.direct",
-  "packagerNgrokUrl": "https://packager.vr-4na.mlazhari.y-health-care.exp.direct",
-  "ngrokPid": 59658
+  "packagerPid": 77720,
+  "expoServerNgrokUrl": "https://vr-4na.molazhari.y-health-care.exp.direct",
+  "packagerNgrokUrl": "https://packager.vr-4na.molazhari.y-health-care.exp.direct",
+  "ngrokPid": 77749,
+  "webpackServerPort": null
 }
